@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B33C7A0D-4A50-4CE5-8D8B-AF8609644229}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UnreleaseAmbersand1._0</RootNamespace>
+    <AssemblyName>UnreleaseAmbersand1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.8.0.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>C:\Users\PRINCO\Downloads\Bunifu UI WinForms 1.8.0.1\Bunifu UI WinForms 1.8.0.1\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>C:\Users\PRINCO\Downloads\Bunifu UI WinForms 1.8.0.1\Bunifu UI WinForms 1.8.0.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>C:\Users\PRINCO\Downloads\Bunifu UI WinForms 1.8.0.1\Bunifu UI WinForms 1.8.0.1\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>C:\Users\PRINCO\Downloads\Bunifu UI WinForms 1.8.0.1\Bunifu UI WinForms 1.8.0.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>C:\Users\PRINCO\Downloads\Bunifu UI WinForms 1.8.0.1\Bunifu UI WinForms 1.8.0.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>C:\Users\PRINCO\Downloads\Bunifu UI WinForms 1.8.0.1\Bunifu UI WinForms 1.8.0.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\PRINCO\Downloads\Bunifu UI WinForms 1.8.0.1\Bunifu UI WinForms 1.8.0.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ForeIO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ForeIO.Designer.cs">
+      <DependentUpon>ForeIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Run.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Run.Designer.cs">
+      <DependentUpon>Run.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usrc_jogging.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usrc_jogging.Designer.cs">
+      <DependentUpon>Usrc_jogging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usrc_programming.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usrc_programming.Designer.cs">
+      <DependentUpon>Usrc_programming.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ForeIO.resx">
+      <DependentUpon>ForeIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Run.resx">
+      <DependentUpon>Run.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usrc_jogging.resx">
+      <DependentUpon>Usrc_jogging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usrc_programming.resx">
+      <DependentUpon>Usrc_programming.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_filled_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jogging.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_file_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrative_tools_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overview_pages_3_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_filled_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_sign_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update_left_rotation_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_pointing_left_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up_arrow_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up_arrow_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down_arrow_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location_update_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up_round_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down_round_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gup_round_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_round_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gdown_round_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left_round_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bup_round_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bdown_round_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rrotate_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ldown3_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ldown3_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rplus_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rminus_sign_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gdown2_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gdown3_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gplus_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gminus_sign_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rdown2_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rdown3_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rup_round_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rminus_sign_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_property_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ptp_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linear_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circled_notch_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robot_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\input.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speed_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edl-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opened_folder_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_sign_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up_arrow_104px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down_arrow_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_list_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_column_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replace_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\one_way_transition_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\controller_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commercial_60px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
